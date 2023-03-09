@@ -1,0 +1,181 @@
+/*Classes*/
+
+.classes {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem 0rem 1.25rem;
+    margin-bottom: 1.75rem;
+    gap: 1.25rem;
+    @media screen and (max-width: 426px) {
+        padding: 2rem 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0;
+        border-top: 1px solid $color_border;
+        gap: 2rem;
+    }
+    .classes_top {
+        padding: 0rem 1.5rem 0rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media screen and (max-width: 426px) {
+            padding: 0;
+        }
+        .classes_title {
+            @include font_titile_md;
+        }
+        .button {
+        }
+    }
+    .classes_months {
+        padding: 0rem 1.5rem 0rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        @include font_body_M_300;
+        @media screen and (max-width: 426px) {
+            padding: 0;
+        }
+        i {
+        }
+        .month_label_au {
+            position: absolute;
+            left: 36px;
+            top: 0;
+            @media screen and (max-width: 426px) {
+                left: 32px;
+            }
+        }
+        .month_label_sept {
+            position: absolute;
+            right: 230px;
+            top: 0;
+            @media screen and (max-width: 426px) {
+                right: 28px;
+            }
+        }
+    }
+    .classes_days {
+        padding: 0rem 1.5rem 0rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+        @media screen and (max-width: 426px) {
+            padding: .25rem 0rem;
+            display: flex;
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+        .classes_days_item {
+            width: 16px;
+            height: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 1.25rem;
+            @include font_body_M_300;
+            &.border {
+                box-sizing: border-box;
+                border-radius: 30px;
+                border: 1px solid $color_border;
+            }
+            &.active {
+                box-sizing: border-box;
+                border-radius: 30px;
+                border: 1px solid $color_primary;
+                background-color: $color_primary;
+                color: white;
+            }
+        }
+    }
+    .classes_events {
+        display: flex;
+        overflow: auto;
+        .class_event {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem;
+            width: 400px;
+            height: 188px;
+            flex-shrink: 0;
+            @media screen and (max-width: 426px) {
+                width: 300px;
+                height: 188px;
+            }
+            &.friends {
+                background-image: linear-gradient(
+                        77.85deg,
+                        rgba(0, 0, 0, 0.5) 33.78%,
+                        rgba(0, 0, 0, 0) 100%
+                    ),
+                    url(/assets/img/friends.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.crosswalk {
+                background-image: linear-gradient(
+                        77.85deg,
+                        rgba(0, 0, 0, 0.5) 33.78%,
+                        rgba(0, 0, 0, 0) 100%
+                    ),
+                    url(/assets/img/crosswalk.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &.happiness {
+                background-image: linear-gradient(
+                        77.85deg,
+                        rgba(0, 0, 0, 0.5) 33.78%,
+                        rgba(0, 0, 0, 0) 100%
+                    ),
+                    url(/assets/img/fireworks.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .event_top {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                .event_left {
+                    .event_title {
+                        color: white;
+                        @include font_titile_sm;
+                    }
+                    .event_subtitle {
+                        @include font_body_S;
+                        color: white;
+                    }
+                }
+                .event_right {
+                    display: flex;
+                    align-items: center;
+                    background-color: $color_primary;
+                    padding: 0.2rem 0.75rem;
+                    border-radius: 20px;
+                    .event_tag {
+                        @include font_body_S;
+                        color: white;
+                    }
+                }
+            }
+            .event_bottom {
+                display: flex;
+                align-items: center;
+                gap: 0.25rem;
+                @include font_body_S;
+                color: white;
+                .event_data {
+                }
+                i {
+                }
+            }
+        }
+    }
+}

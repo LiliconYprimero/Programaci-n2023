@@ -1,0 +1,37 @@
+@import "lib/vars";
+@import "lib/mixins";
+@import "lib/reset";
+@import "lib/fontface";
+@import "lib/keyframes";
+@import "lib/bootstrap-icons"; // https://icons.getbootstrap.com/
+
+@import "partials/header";
+@import "partials/menu";
+@import "partials/profile";
+@import "partials/classes";
+@import "partials/learning";
+@import "partials/payments";
+@import "partials/button";
+@import "partials/cta";
+@import "partials/layout";
+
+/* {
+    border: 1px solid pink;
+}*/
+
+:root {
+    --font-base: $font_size_base;
+    --font-leading-base: $line_height_base;
+    --base-color: $body_color;
+}
+
+html,
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: var(--font-base);
+    line-height: var(--font-leading-base);
+    color: $color_black;
+    min-height: 100vh;
+}
+
+

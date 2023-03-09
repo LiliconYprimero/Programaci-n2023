@@ -1,0 +1,89 @@
+
+@mixin font_titile_lg() {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    @media screen and (max-width: 426px) {
+        font-size: 1.75rem;
+    }
+}
+
+@mixin font_titile_md() {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 700;
+    @media screen and (max-width: 426px) {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin font_titile_sm() {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    @media screen and (max-width: 426px) {
+        font-size: 1.25rem;
+    }
+}
+
+@mixin font_titile_xs() {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    @media screen and (max-width: 426px) {
+        font-size: 1rem;
+    }
+}
+
+@mixin font_body_L() {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    @media screen and (max-width: 426px) {
+        font-size: 1.25rem;
+    }
+}
+
+@mixin font_body_M_300() {
+    font-size: 0.9rem;
+    font-weight: 300;
+    @media screen and (max-width: 426px) {
+        font-size: 1rem;
+    }
+}
+
+@mixin font_body_M_400() {
+    font-size: 0.9rem;
+    font-weight: 400;
+    @media screen and (max-width: 426px) {
+        font-size: 1rem;
+    }
+}
+
+@mixin font_body_M_600() {
+    font-size: 0.9rem;
+    font-weight: 600;
+    @media screen and (max-width: 426px) {
+        font-size: 1rem;
+    }
+}
+
+@mixin font_body_S() {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 300;
+}
+
+@mixin font_body_XS() {
+    font-size: 0.62rem;
+    line-height: 1rem;
+    font-weight: 300;
+}
+
+@mixin font_number_big() {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    font-weight: 500;
+}

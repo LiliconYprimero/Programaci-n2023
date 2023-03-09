@@ -1,0 +1,184 @@
+/*Learning*/
+
+.learning {
+    padding: 0rem 1.25rem 1rem 1.25rem;
+    border-right: 1px solid $color_border;
+    @media screen and (max-width: 426px) {
+        padding: 2rem 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-top: 1px solid $color_border;
+        border-right: transparent;
+    }
+    .learning_goals {
+        border-bottom: 1px solid $color_border;
+        @media screen and (max-width: 426px) {
+            border-bottom: transparent;
+        }
+        .learning_goals_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.25rem;
+            padding: 0rem 0.5rem;
+            @media screen and (max-width: 426px) {
+                margin-bottom: 2rem;
+                padding: 0;
+            }
+            .learning_goals_header {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                .header_title {
+                    @include font_titile_md;
+                }
+                .goals_count {
+                    width: 16px;
+                    height: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color_primary;
+                    border-radius: 30px;
+                    padding: 0.6rem;
+                    @include font_body_S;
+                    color: white;
+                }
+            }
+            .button {
+            }
+        }
+        .learning_goals_items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            padding: 0rem 0.5rem;
+            height: 100%;
+            margin-bottom: 1.5rem;
+            @media screen and (max-width: 426px) {
+                margin-bottom: 2rem;
+                gap: 1rem;
+                padding: 0;
+            }
+            .learning_goals_item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media screen and (max-width: 426px) {
+                    gap: 0.5rem;
+                }
+                .learning_progress {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    width: 100%;
+                    @media screen and (max-width: 426px) {
+                        gap: 0.75rem;
+                    }
+                    img {
+                        height: 52px;
+                    }
+                    .learning_progress_text {
+                        width: 100%;
+                        @include font_body_M_600;
+                    }
+                }
+                i {
+                    @include font_body_M_300;
+                }
+            }
+        }
+    }
+    .shared_resources {
+        padding: 1.5rem 0.5rem;
+        @media screen and (max-width: 426px) {
+            padding: 2rem 0rem 0rem 0rem;
+            border-top: 1px solid $color_border;
+        }
+        .shared_resources_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.25rem;
+            @media screen and (max-width: 426px) {
+                margin-bottom: 2rem;
+            }
+            .shared_resources_header {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                .shared_resources_title {
+                    @include font_titile_md;
+                }
+                .resources_count {
+                    width: 16px;
+                    height: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color_primary;
+                    border-radius: 30px;
+                    padding: 0.6rem;
+                    @include font_body_S;
+                    color: white;
+                }
+            }
+
+            .button {
+            }
+        }
+        .shared_resources_items {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            @media screen and (max-width: 426px) {
+                gap: 1.5rem;
+            }
+            .shared_resources_item {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .resource_item_1 {
+                    display: flex;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    width: 59px;
+                    height: 59px;
+                    padding: 0.5rem;
+                    border-radius: 4px;
+                    background-color: $color_back_lilac;
+                    img {
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+                .resource_item_2 {
+                    display: flex;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    width: 59px;
+                    height: 59px;
+                    padding: 0.25rem;
+                    border-radius: 4px;
+                    background-color: $color_back_blue;
+                    img {
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+                .resource_content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.25rem;
+                    width: 100%;
+                    .resource_title {
+                        @include font_body_M_600;
+                    }
+                    .resource_type {
+                        @include font_body_M_300;
+                    }
+                }
+            }
+        }
+    }
+}

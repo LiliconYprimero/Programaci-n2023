@@ -1,0 +1,169 @@
+/*Payments*/
+
+.payments {
+    padding: 0rem 1.5rem 1rem 1.25rem;
+    @media screen and (max-width: 426px) {
+        padding: 2rem 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-top: 1px solid $color_border;
+    }
+    .payments_top {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 1.25rem;
+        padding: 0rem 0.5rem;
+        @media screen and (max-width: 426px) {
+            padding: 0;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .payments_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .payments_title {
+                @include font_titile_md;
+            }
+            .button {
+            }
+        }
+        .payments_calendar {
+            display: flex;
+            @include font_body_M_300;
+            .payments_month {
+                display: flex;
+                justify-content: center;
+                border: 1px solid $color_border;
+                border-radius: 4px 0px 0px 4px;
+                padding: .5rem 0rem;
+                width: 100%;
+            }
+            .payments_year {
+                display: flex;
+                justify-content: center;
+                border-radius: 0px 4px 4px 0px;
+                background-color: $color_black;
+                padding: .5rem 0rem;
+                color: white;
+                width: 100%;
+            }
+        }
+        .payments_money {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 426px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+            }
+            .payments_left {
+                @media screen and (max-width: 426px) {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .money {
+                    @include font_number_big;
+                    .money_small {
+                        @include font_body_M_300;
+                    }
+                }
+                .money_when {
+                    @include font_body_M_300;
+                }
+            }
+            .payments_right {
+                width: 68px;
+                height: 68px;
+                @media screen and (max-width: 426px) {
+                    width: 100px;
+                    height: 100px;
+                }
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    @media screen and (max-width: 426px) {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .invoices {
+        padding: 0rem 0.5rem 1.5rem 0.5rem;
+        @media screen and (max-width: 426px) {
+            padding: 0;
+        }
+        .invoices_title {
+            @include font_titile_xs;
+            margin-bottom: 1.25rem;
+            @media screen and (max-width: 426px) {
+                margin-bottom: 1.75rem;
+            }
+        }
+        .invoices_items {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            @media screen and (max-width: 426px) {
+                gap: 1.5rem;
+            }
+            .invoices_item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .invoices_left {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    width: 100%;
+                    .invoices_picture {
+                        display: flex;
+                        justify-content: center;
+                        flex-shrink: 0;
+                        width: 48px;
+                        height: 48px;
+                        padding: .5rem;
+                        background-color: $color_back_gray;
+                        border-radius: 4px;
+                        position: relative;
+                        img {
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                        .invoices_check {
+                            position: absolute;
+                            top: -8px;
+                            left: 38px;
+                            i {
+                                color: $color_success;
+                            }
+                        }
+                    }
+                    .invoices_content {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0.25rem 0rem;
+                        width: 100%;
+                        gap: 0.25rem;
+                        .invoice_title {
+                            width: 100%;
+                            @include font_body_M_600;
+                        }
+                        .invoice_date {
+                            width: 100%;
+                            @include font_body_M_300;
+                        }
+                    }
+                }
+                .invoice_money {
+                    @include font_body_L;
+                }
+            }
+        }
+    }
+}
