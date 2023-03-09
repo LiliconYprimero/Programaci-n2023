@@ -1,0 +1,40 @@
+/*DOWNLOAD PAGE*/
+
+.download_content
+    @apply flex flex-col 
+
+.download_top
+    @apply flex justify-center mt-20
+    .download_top_holder
+        @apply flex items-baseline justify-between w-full px-4 
+        .added_box
+            @apply flex items-center gap-3 px-3 py-2 bg-white/[15%] rounded-sm mb-4
+            .added_title
+                @apply text-base font-bold
+            i
+                @apply text-lg
+        i
+            @apply text-lg
+    
+.download_list
+    @apply flex justify-center h-full 
+    .download_list_holder
+        @apply flex flex-col gap-4 w-full px-4
+        .download_box
+            @apply flex gap-2 bg-white/[10%] rounded-sm
+            .box_left
+                @apply flex relative w-[120px]
+                img
+                    @apply object-cover object-center
+                i
+                    @apply absolute top-[75px] left-[4px]
+            .box_right
+                @apply flex flex-col p-2
+                .time_limit
+                    @apply flex text-xs uppercase font-extralight
+                .show_title
+                    @apply flex text-sm font-semibold
+                .show_episode
+                    @apply flex text-sm font-extralight
+                .show_label
+                    @apply flex text-sm font-extralight

@@ -1,0 +1,50 @@
+.show
+    @apply flex justify-center pt-[600px] bg-cover bg-center mb-6
+    .show_holder
+        @apply w-full px-4
+    .chosen_show
+        @apply flex flex-col gap-0.5
+        .show_title
+            @apply flex h-[100px] pb-3
+            img
+                @apply object-contain object-center
+        .show_actions
+            @apply flex items-center justify-between pb-3 mb-3 border-2 border-transparent border-b-white
+            .play
+                @apply flex w-10 h-10 justify-center items-center bg-black rounded-full border-solid border-2 border-white
+                i
+                    @apply text-lg
+            .actions_right
+                @apply flex gap-6
+                i
+                    @apply text-xl
+        .summary
+            @apply text-base font-light
+
+
+
+.episode
+    @apply flex flex-col mb-20
+    .episode_holder
+        @apply w-full px-4
+        .season_box
+            @apply flex items-center justify-between p-3 bg-white/[15%] rounded-sm mb-4
+            .season_title
+                @apply text-base font-bold
+            i
+                @apply text-lg
+        .episode_box
+            @apply flex flex-col
+            .episode_preview
+                @apply flex border-2 border-transparent border-b-white mb-2
+                img
+                    @apply flex
+            .box_details
+                @apply flex items-center justify-between
+                .details_left
+                    .episode_title
+                        @apply text-sm font-bold
+                    .duration
+                        @apply text-sm font-extralight
+                i
+                    @apply text-lg

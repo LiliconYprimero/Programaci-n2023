@@ -1,0 +1,71 @@
+.home_content
+    @apply overflow-auto 
+.home_bottom
+    @apply bg-gradient-to-b from-black to-purple-900/60 z-0
+
+.hero
+    @apply flex justify-center pt-[600px] bg-cover bg-center mb-1
+    .hero_holder
+        @apply w-full px-4
+        .new_movie
+            @apply flex flex-col items-center gap-0.5
+            .new_movie_title
+                @apply flex h-[100px] pb-3
+                img
+                    @apply object-contain object-center
+            .tag
+                @apply flex text-center text-xs uppercase font-bold
+            .description
+                @apply flex text-center text-base font-light
+        .nav_dots
+            @apply flex justify-center py-3
+            i
+                @apply text-2xl text-gray-400
+                &.active
+                    @apply text-white
+
+
+.watching
+    @apply flex justify-center mb-4 
+    .watching_holder
+        @apply flex flex-col w-full px-4 gap-3
+        .watching_header
+            @apply flex items-center gap-2
+            .watching_title
+                @apply text-base font-bold 
+            i
+                @apply text-sm
+        .watching_boxes
+            @apply flex gap-4 overflow-auto
+            .watching_box
+                @apply flex flex-col gap-1 w-[160px]
+                .watching_box_top
+                    @apply flex relative h-[160px] w-[160px]
+                    .show_preview
+                        @apply object-cover object-center
+                    i
+                        @apply absolute top-[132px] left-[6px] 
+                .watching_box_bottom
+                    @apply flex flex-col gap-1
+                    .watching_box_toptitle
+                        @apply text-xs uppercase font-light
+                    .watching_box_title
+                        @apply text-sm font-semibold
+
+
+.foryou
+    @apply flex justify-center mb-20 
+    .foryou_holder
+        @apply flex flex-col w-full px-4 gap-3
+        .foryou_header
+            @apply text-base font-bold 
+        .foryou_shows
+            @apply flex gap-4 overflow-auto
+            .show_box
+                @apply flex flex-col gap-1 w-[280px]
+                .foryou_show_preview
+                    @apply flex h-[140px] w-[280px]
+                    img
+                        @apply object-cover object-center
+                .subtitle
+                    @apply text-xs uppercase font-light
