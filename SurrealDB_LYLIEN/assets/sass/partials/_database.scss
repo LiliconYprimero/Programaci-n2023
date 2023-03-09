@@ -1,0 +1,51 @@
+/*Database*/
+
+.database {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9rem;
+    .database_content {
+        width: $width_center;
+        .database_top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 6rem;
+            gap: 1.25rem;
+            .database_title {
+                @include font_title_md;
+            }
+            .database_body {
+                text-align: center;
+                width: 97ch;
+                color: $color_gray_800;
+            }
+        }
+        .database_bottom {
+            background-color: $color_gray_box;
+            border-radius: 1rem;
+            .database_list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                padding: 3.75rem;
+                .database_list_item {
+                    display: flex;
+                    width: 33%;
+                    margin-top: 0.8rem;
+                    margin-bottom: 0.8rem;
+                    .database_icon {
+                        width: 22px;
+                        margin-right: 0.6rem;
+                        img {
+                        }
+                    }
+                    .database_label {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

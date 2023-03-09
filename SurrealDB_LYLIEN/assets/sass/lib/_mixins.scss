@@ -1,0 +1,65 @@
+@mixin font_titile_lg() {
+    font-size: 60px;
+    line-height: 4rem;
+    letter-spacing: -0.75px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+@mixin font_title_md() {
+    font-size: 38px;
+    line-height: 3rem;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+@mixin font_title_sm() {
+    font-size: 30px;
+    line-height: 2rem;
+    letter-spacing: -0.25px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+@mixin font_title_xs() {
+    font-size: 27px;
+    line-height: 2rem;
+    letter-spacing: -0.25px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+@mixin font_title_xs_special() {
+    font-size: 22px;
+    line-height: 2rem;
+    letter-spacing: -0.25px;
+    font-weight: 600;
+    font-family: Poppins;
+}
+@mixin font_body_lg() {
+    font-size: 18px;
+    line-height: 1.75rem;
+}
+@mixin font_body_md() {
+    font-size: 16px;
+    line-height: 1.75rem;
+}
+@mixin font_body_sm() {
+    font-size: 14px;
+    line-height: 1.25rem;
+}
+@mixin font_body_xs() {
+    font-size: 12px;
+    line-height: 1rem;
+    letter-spacing: -0.25px;
+}
+@mixin font_code() {
+    font-size: 14px;
+    line-height: 1.25rem;
+    font-family: var(--system-font-mono);
+}
+@mixin font_tag() {
+    font-size: 13px;
+    line-height: 1rem;
+    letter-spacing: -0.25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--system-font-mono);
+}

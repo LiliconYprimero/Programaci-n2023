@@ -1,0 +1,75 @@
+/*Opinions*/
+
+.opinions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9rem;
+    .opinions_content {
+        width: $width_center;
+        .opinions_top {
+            margin-bottom: 3rem;
+            @include font_title_md;
+            text-align: center;
+        }
+        .opinions_column {
+            .opinions_boxes {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-between;
+                gap: 0.5;
+                @include font_body_sm;
+                .opinion_box_items {
+                    background-color: $color_gray_box;
+                    border-radius: 1rem;
+                    width: 32%;
+                    display: flex;
+                    padding: 1.3rem;
+                    gap: 1rem;
+                    margin-bottom: 1.8rem;
+                    .opinion_box_left {
+                        max-width: 32px;
+                        img {
+                            max-width: 32px;
+                            max-width: 37px;
+                            object-fit: contain;
+                            object-position: left;
+                        }
+                    }
+                    .opinion_box_right {
+                        gap: 2rem;
+                        .opinion_box_header {
+                            display: flex;
+                            align-items: baseline;
+                            margin-bottom: 0.5rem;
+                            gap: 0.3rem;
+                            .opinion_box_name {
+                                font-weight: bold;
+                            }
+                            .opinion_box_user {
+                                font-weight: bold;
+                                color: $color_gray_800;
+                            }
+                            .opinion_box_icon {
+                                color: $color_gray_800;
+                                .bi {
+                                }
+                            }
+                            .opinion_box_date {
+                                color: $color_gray_800;
+                            }
+                        }
+                        .opinion_box_content {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.opinion_box_name:empty {
+    display: none;
+}
+.opinion_box_user:empty {
+    display: none;
+}

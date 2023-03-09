@@ -1,0 +1,27 @@
+/*Ending*/
+
+.ending {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+    border-bottom: 1px solid $color_border_gray;
+    .ending_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: $width_center;
+        .ending_title {
+            margin-bottom: 1.25rem;
+            @include font_title_md;
+        }
+        .ending_body {
+            margin-bottom: 1.8rem;
+            text-align: center;
+            color: $color_gray_800;
+        }
+        .ending_ctas {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}

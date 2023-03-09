@@ -1,0 +1,48 @@
+// components cta
+
+.button {
+    background: linear-gradient(-60deg, #8700ff 0, #ff009e 100%);
+    border-radius: 9999px;
+
+    padding: 2px;
+    .button_holder {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.6rem 1.25rem;
+        border-radius: 9999px;
+
+        .icon {
+            transition: all 500ms ease;
+            .bi {
+            }
+        }
+        .label {
+        }
+    }
+
+    &.outlined {
+        .button_holder {
+            background-color: #171a21;
+        }
+    }
+    &.popup {
+        .button_holder {
+            box-shadow: 0 0 30px rgb(255 0 158 / 50%);
+        }
+    }
+    &:hover {
+        box-shadow: 0 0 50px rgb(255 0 158 / 60%);
+        transition: all 500ms ease;
+        .icon {
+            color: $color_primary;
+            transition: all 500ms ease;
+        }
+    }
+    &.reverse {
+        .button_holder {
+            flex-direction: row-reverse;
+            gap: 2rem;
+        }
+    }
+}

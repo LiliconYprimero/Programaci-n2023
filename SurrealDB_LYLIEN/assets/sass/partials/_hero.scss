@@ -1,0 +1,71 @@
+/*Hero*/
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding-top: 6rem;
+    background-image: url(https://surrealdb.com/static/img/home/honeycomb-bfde8f85a7735dc30620c17cbfe50a7f.png);
+    background-repeat: no-repeat;
+    background-size: 1254px 662px;
+    background-position: 600px -128px;
+    .hero_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: $width_center;
+        .hero_left {
+            .hero_title {
+                background-image: linear-gradient(
+                    -60deg,
+                    #8700ff 0,
+                    #ff009e 100%
+                );
+                background-size: 100%;
+                background-clip: text;
+                @include font_titile_lg;
+                max-width: 24ch;
+                margin-bottom: 1rem;
+                .logo_text {
+                    img {
+                        height: 45px;
+                    }
+                }
+
+                .ultimate {
+                    -webkit-text-fill-color: transparent;
+                }
+                .data {
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .hero_subtitle {
+                @include font_title_xs;
+                margin-bottom: 1rem;
+            }
+            .hero_body {
+                margin-bottom: 2rem;
+                @include font_body_lg;
+                max-width: 80ch;
+                color: $color_gray_800;
+            }
+            .hero_ctas {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                @include font_body_lg;
+            }
+        }
+        .hero_right {
+            display: flex;
+            width: 432px;
+            height: 494px;
+            img {
+                object-fit: contain;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

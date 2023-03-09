@@ -1,0 +1,123 @@
+/*Footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-image: url(https://surrealdb.com/static/img/home/honeycomb-bfde8f85a7735dc30620c17cbfe50a7f.png);
+    background-repeat: no-repeat;
+    background-size: 1254px 662px;
+    background-position: 600px 0;
+    .footer_content {
+        width: $width_center;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6rem;
+        .footer_left {
+            width: 70%;
+            .footer_section_top {
+                .footer_header {
+                    width: 300px;
+                    height: 40px;
+                    margin-bottom: 2rem;
+                    img {
+                        object-fit: contain;
+                        object-position: left;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .footer_claim {
+                    margin-bottom: 2rem;
+                    width: 94ch;
+                }
+                .footer_social_items {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 3rem;
+                    padding-bottom: 2rem;
+                    border-bottom: 1px solid $color_border_gray;
+                    gap: 0.75rem;
+                    color: $color_gray_800;
+                    @include font_title_xs;
+                    .footer_social_item {
+                        a {
+                            .bi {
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_section_mid {
+                display: flex;
+                margin-bottom: 2rem;
+                padding-bottom: 3rem;
+                border-bottom: 1px solid $color_border_gray;
+                gap: 3rem;
+                .footer_nav_block {
+                    .footer_nav_block_header {
+                        @include font_body_sm;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin-bottom: 2rem;
+                    }
+                    .footer_nav_block_items {
+                        .footer_nav_block_item {
+                            margin-bottom: 0.75rem;
+                            color: $color_gray_800;
+                            a {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                .icon {
+                                    .bi {
+                                    }
+                                    &.success {
+                                        color: $color_success;
+                                    }
+                                }
+                                .label {
+                                }
+                            }
+                            .status_green {
+                                color: $color_success;
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_section_bottom {
+                display: flex;
+                margin-bottom: 6rem;
+                gap: 3rem;
+                @include font_body_xs;
+                .footer_final_logo {
+                    width: 212px;
+                    height: 60px;
+                    flex-shrink: 0;
+                    img {
+                        object-fit: contain;
+                        object-position: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .footer_copyright {
+                    color: $color_gray_800;
+                    width: 30ch;
+                }
+            }
+        }
+        .footer_right {
+            display: flex;
+            width: 289px;
+            height: 330px;
+            img {
+                object-fit: contain;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
